@@ -1,16 +1,18 @@
 <template>
-  
     <div class="container-fluid">
-      <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">A Propos</router-link> |
-        <router-link to="/about">Contact</router-link>
-      </div>
       <div class="row">
-        <div class="col">
-          <img src="@/assets/photo.jpg" class="img-fluid">
+        <div id="nav" class="col-12">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">A Propos</router-link> |
+          <router-link to="/about">Contact</router-link>
         </div>
-        <div class="col"> TEXTE </div>
+        <div class="row">
+          <div class="col">
+            <img src="@/assets/photo.jpg" class="img-fluid">
+          </div>
+          <div class="col"> TEXTE </div>
+        </div>
+        
       </div>
     </div>
   <router-view/>
@@ -26,7 +28,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 #nav a {
@@ -37,4 +39,6 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>
