@@ -1,22 +1,29 @@
 <template>
-  <div class="container-fluid">
+  <div class="container fluid h-100 p-0">
+    <div class="row h-100">
+      <div class="col-4">
+        <div class="row h-50 profile_photo"></div>
+        <div class="row h-50"></div>
+      </div>
+      <div class="col-8"></div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  /*components: {
-    HelloWorld
-  }*/
+  name: 'Home'
 }
 </script>
 
 <style scoped>
-  .container-fluid{
-    padding: 0;
-  }
+.profile_photo {
+  background-image: url("~@/assets/photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.row_ {
+  display: flex;
+}
 </style>
